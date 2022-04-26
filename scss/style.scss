@@ -1,0 +1,157 @@
+//Estructurando con SASS
+// PARTIALS
+@import "tipografias";
+@import "colours";
+/* Selector Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.textoCard{
+    text-align: left;
+    margin-top: 10px;
+}
+ /* TAMAÑO DEL LOGO EN NAV */
+ .imgNav{
+    width: 100px;
+}
+/* TOP 3 DE LAS NOTICIAS SUPERIORES */
+.noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-top: grey dashed 5px;
+}
+.noticiasTop{
+    height: 200px;
+    background: $bcnoticiasoff;
+    background: linear-gradient(0deg, $bcnoticiasoff 0%, $bcnoticiasoff 47%, rgba(255,224,0,0) 100%);
+    padding: 10px;
+    color: black;
+    text-align: center;
+    width: 33%;
+    &:hover{
+        background: $bcnoticiason;
+        background: linear-gradient(0deg, $bcnoticiason 0%, rgba(187,183,183,1) 38%, rgba(187,183,183,1) 67%, rgba(187,183,183,0) 95%);}        
+}
+/* TAMAÑO IMAGENES DEL CAROUSEL */
+.imgCarousel{
+    height: auto;
+}
+/* TAMAÑO IMAGENES DE LOS SPONSORS Y CONFIGURACIONES */
+.imgSponsors{
+    width: 80px;
+    margin: 10px;
+    padding: 5px;
+}
+.backgroundSponsors{
+    background-color: $footertb;
+}
+.sponsors{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-color: $footertb;
+    width: 100%;
+}
+/* CONFIGURACIONES DE LAS TARJETAS STEPS */
+.cardsAlign{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardGroup{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.bkCardGroup{
+    background-color: rgba(128, 128, 128, 0.274);
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DE TESTIMONIOS */
+.imgTestimonios{
+    width: 35%;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%; ;
+}
+/* ANIMACION DE LAS IMAGENES CARDS DE TESTIMONIOS*/
+.imgTestimonios:hover{
+    scale: 1.2;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.507);
+}
+.cardText {
+    margin-bottom: 0;
+    text-align: center;
+}
+/* PROPIEDADES IMAGENES DE SERVICIOS */
+.imgCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+ /* **** PIE DE PAGINA **** */
+ footer{
+    background: $footer;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+}
+.divFooterFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.iconSocialMedia{
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+}
+.contactoFooter{
+    padding: 10px;
+}
+/* FIN PIE DE PAGINA */
+
+@media (max-width: 720px){
+    /* TOP 3 DE LAS NOTICIAS SUPERIORES */
+.noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-top: grey dashed 5px;
+}
+.noticiasTop{
+    height: 150px;
+    background: $bcnoticiasoff;
+    background: linear-gradient(0deg, $bcnoticiasoff 0%, $bcnoticiasoff 47%, rgba(255,224,0,0) 100%);
+    padding: 10px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+}

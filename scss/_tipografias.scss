@@ -1,0 +1,45 @@
+// TIPOGRAFIA GENERAL DEL SITIO
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* ESTILO DE LOS TITULOS DE LAS SECCIONES */
+.tituloSecciones{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 174, 0);
+    text-align: left;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+}
+/* Titulos de los paso a paso */
+.titleStep1{
+    background-color: rgb(125, 204, 54);
+    text-align: center;
+}
+.titleStep2{
+    background-color: rgb(57, 195, 187);
+    text-align: center;
+}
+.titleStep3{
+    background-color: rgb(230, 73, 72);
+    text-align: center;
+}
+.titleStep4{
+    background-color: orange;
+    text-align: center;
+}
+.titleStep5{
+    background-color: rgb(76, 112, 182);
+    text-align: center;
+}
+
+/* Titulo general de las secciones */
+.h2Top{
+    background-color: rgb(187, 183, 183);
+    padding: 5px;
+}
+h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
